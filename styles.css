@@ -1,0 +1,31 @@
+.centered {
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -250px;
+    border-width: 4px;
+    border-style: solid;
+    border-color:rgb(121, 119, 119);
+    padding: 10px;
+    background-color: black;
+    color: rgb(212, 237, 222);
+    font-family:monospace
+
+}
+body {
+    background-color: rgb(170, 156, 138);
+}   
+
+@keyframes foo {
+    0%, 10% {
+      opacity: 0;
+    }
+    15%, 100% {
+      opacity: 1;
+    }
+  }
+
+#gametext {display: none;}
