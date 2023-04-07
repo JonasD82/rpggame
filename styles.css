@@ -1,27 +1,28 @@
 .centered {
     width: 500px;
     height: 400px;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 45%;
     position: absolute;
     margin-top: -200px;
     margin-left: -250px;
-    border-width: 4px;
-    border-style: solid;
+    border-width: 6px;
     border-color:rgb(121, 119, 119);
     padding: 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
     color: rgb(212, 237, 222);
-    font-family:monospace
+    font-family:monospace;
+    border-style:ridge;
 
 }
 body {
-    background-color: rgb(170, 156, 138);
+    background-color: rgb(14, 14, 14);
+    font-family: monospace;
 }   
 
 @keyframes foo {
     0%, 10% {
-      opacity: 0;
+      opacity: .0;
     }
     15%, 100% {
       opacity: 1;
@@ -29,3 +30,228 @@ body {
   }
 
 #gametext {display: none;}
+
+#menubar {
+    height: 700px;
+    width: 185px;
+    border-right: ridge;
+    border-color: darkgrey;
+    border-width: 6px;
+    float: left;
+    background-color: rgba(169, 169, 169, 0.75);
+
+
+}
+
+#infobar {
+    height: 700px;
+    width: 290px;
+    border-left: ridge;
+    border-color: darkgrey;
+    border-width: 6px;
+    float: right;
+    background-color: rgba(169, 169, 169, 0.75);
+    vertical-align: top;
+
+}
+
+#gamebar {
+    border: ridge;
+    border-color: darkgrey;
+    border-width: 6px;
+    height: 100px;
+    width: 700px;
+    margin-top: 500px;
+    margin-left: 240px;
+    background-color: rgba(169, 169, 169, 0.75);
+
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefee9;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 20%;
+    font-size: large;
+    
+  }
+
+
+
+#allwindow {
+    border-radius: 7px;
+    border: solid;
+    height: 700px;
+    width: 1300px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 50px;
+    background-image: url("images/dungeonbg.jpg");
+    -webkit-box-shadow:0px 0px 50px 10px #ffea00 ;
+    -moz-box-shadow:0px 0px 50px 10px #ffea00 ;
+    box-shadow:0px 0px 50px 10px #ffea00 ;
+    border-width:10px;
+    border-style:ridge;
+    border-color:#a97c1b;
+}
+
+#charbutton, #invbutton, #questsbutton, #mapbutton {
+    margin-top: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 160px;
+    margin-bottom: 50px;
+
+}
+
+#c-Choice7, #c-Choice6, #c-Choice5, #c-Choice4, #c-Choice3, #c-Choice1, #c-Choice2 {
+    margin-left: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+#Choice7, #Choice6, #Choice5, #Choice4, #Choice3, #Choice1, #Choice2 {
+    margin-left: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+button, button:focus {
+    font-size: 17px;
+    font-family: monospace;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(251, 249, 126), rgb(133, 131, 19));
+    border: 2px solid rgb(34, 33, 33);
+    border-bottom: 5px solid rgb(35, 35, 35);
+    box-shadow: 0px 1px 6px 0px rgb(104, 56, 2);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+  
+  button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+  }
+  button:disabled {
+    background-image: linear-gradient(rgb(143, 140, 134), rgb(89, 88, 26));
+    border: 2px solid rgb(34, 33, 33);
+    border-bottom: 5px solid rgb(35, 35, 35);
+    box-shadow: 0px 1px 6px 0px rgb(104, 56, 2);
+    transform: translate(0, 0px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+  }
+
+
+
+
+
+/* NAV BAR */
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

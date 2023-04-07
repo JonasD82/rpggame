@@ -7,13 +7,74 @@
     
   
   </head>
-  <body>
-    <div id="gametext">the text to print</div>
-    
-    <div id="gamewindow" class="centered"> </div>
-    <!-- <button id="printbutton", onclick="print_slow()" >print</button>
-    <button id="continuebutton", onclick="cont()" >continue</button> -->
-    <button id="startbutton", onclick="gamestart()" >start</button>
+  <body onload="onloadscreen()">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Dungeon Game
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href=# target="_blank">Log In</a>
+          <a href=# target="_blank">About</a>
+          <a href=# target="_blank">Contact</a>
+        </div>
+    </div>
+    <div id="allwindow">
+        
+        <div id="gametext">the text to print</div>
+        <div id="getusername" class="modal">
+            <div class="modal-content">
+                <p>Your name...</p> 
+                <input id="nameentry" type="text">
+                <button id="getusernamebtn" type="submit" onclick="getusername()">OK</button>
+            </div>
+        </div>
+        <div id="gamewindow" class="centered">     
+        </div>
+
+        <div id="menubar">
+                    <!-- <button id="printbutton", onclick="print_slow()" >print</button>
+            <button id="continuebutton", onclick="cont()" >continue</button> -->
+            <button id="charbutton">Character</button>
+            <button id="invbutton">Inventory</button>
+            <button id="questsbutton">Quests</button>
+            <button id="mapbutton">Map</button>
+        </div>
+        <div id="infobar">
+        </div>
+        <div id="gamebar">
+            <div id="choicebuttons">
+                <button id="Choice7">Sword</button>
+                <button id="Choice6">Book</button>
+                <button id="Choice5">Test</button>
+                <button id="Choice1">Loo</button>
+                <button id="Choice2">Test</button>
+                <button id="Choice3">Test</button>
+
+            </div>
+            <div id="combatcontrols">
+                <button id="c-Choice7">Test</button>
+                <button id="c-Choice6">Book</button>
+                <button id="c-Choice5">Test</button>
+                <button id="c-Choice1">Test</button>
+                <button id="c-Choice2">Test</button>
+                <button id="c-Choice3">Test</button>
+
+            </div>
+        </div>
+        
+
+    </div>
     <script src="code.js"></script>
   </body>
 </html>
