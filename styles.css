@@ -31,6 +31,29 @@ body {
 
 #gametext {display: none;}
 
+#gamewindow {
+    font-size:larger;
+    overflow-y:auto;
+}
+
+@keyframes showMe{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+@keyframes hideMe{
+  0%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
 #menubar {
     height: 700px;
     width: 185px;
@@ -52,6 +75,10 @@ body {
     float: right;
     background-color: rgba(169, 169, 169, 0.75);
     vertical-align: top;
+    animation-name: showMe;
+    animation-duration: .5s;
+
+    
 
 }
 
@@ -104,6 +131,8 @@ body {
     margin-top: 70px;
     margin-left: 50px;
     background-image: url("images/dungeonbg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
     -webkit-box-shadow:0px 0px 50px 10px #ffea00 ;
     -moz-box-shadow:0px 0px 50px 10px #ffea00 ;
     box-shadow:0px 0px 50px 10px #ffea00 ;
